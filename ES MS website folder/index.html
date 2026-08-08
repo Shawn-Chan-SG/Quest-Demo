@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>SBG Mission Event 2026 — Demo Route Preview</title>
+<title>2026年SBG宣教活动 — 示范路线预览</title>
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="site-header">
     <div class="lang-toggle">
-      <span class="lang-current">EN</span>
-      <a href="ES%20MS%20website%20folder/index.html">中文</a>
+      <a href="../index.html">EN</a>
+      <span class="lang-current">中文</span>
     </div>
     <img class="site-logo" src="assets/images/mm-logo.png" alt="Mission logo" />
     <span class="emoji">🌿</span>
-    <h1>Great Commission Quest</h1>
-    <p>Demo Route &middot; Preview Challenge</p>
-    <p>Singapore Botanic Gardens &middot; Mission Trip Fundraiser 2026</p>
+    <h1>大使命探索之旅</h1>
+    <p>示范路线 &middot; 预览挑战</p>
+    <p>新加坡植物园 &middot; 2026年宣教之旅筹款活动</p>
   </div>
   <div class="wrap">
     <div id="teamList" class="team-list"></div>
-    <p class="index-note">Tap your team's link to start the race</p>
+    <p class="index-note">点击您的队伍链接，开始比赛</p>
   </div>
-  <div class="site-footer">Demo Route &middot; Singapore Botanic Gardens Mission Trip Fundraiser 2026</div>
+  <div class="site-footer">示范路线 &middot; 新加坡植物园2026年宣教之旅筹款活动</div>
 
   <script src="assets/data.js"></script>
   <script>
@@ -31,7 +31,7 @@
       let html = "";
       Object.keys(TEAMS).forEach((teamId) => {
         const team = TEAMS[teamId];
-        const seqText = team.sequence.map((n) => "CP" + n).join(" &rarr; ");
+        const seqText = team.sequence.map((n) => "检查点" + n).join(" &rarr; ");
         html += `
           <a class="team-row" href="Team%20${teamId}.html">
             <span class="team-row-text">
